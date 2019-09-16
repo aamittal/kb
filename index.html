@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Knowledge Base - New Avon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-cog,.fa-book,.fa-suitcase,.fa-info {font-size:150px} 
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2px 15px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pink w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-small w3-hover-white w3-large w3-pink" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="About.html" class="w3-bar-item w3-button w3-padding-small w3-white"style="width:70px;height:35px;">About</a>
+    <a href="Contacts.html" class="w3-bar-item w3-button w3-padding-small w3-white"style="width:100px;height:35px;">Contacts</a>
+<a href="https://w3.ibm.com/#/">
+  <img src="image\ibm.png" alt="NA" style="width:65px;height:35px;border:0;" class="w3-right w3-bar-item w3-button w3-padding-small">
+</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-small">
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-pink w3-center" style="padding:5px 5px">
+<!-- <h2 class="w3-margin">New Avon Knowledge Base</h2>-->
+<br><img src="image\AVONLOGO.jpeg" alt="NA" width="350" height="100" class="w3-margin-top"><br>
+  <button class="w3-button w3-blue w3-padding-small w3-large w3-margin-top" onclick=window.open("https://avon1prod.service-now.com/")><b><u>Service Now</u></b></button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-2 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1><b>Scripts</b></h1>
+      <div class="tab">
+  <button class="tablinks" onclick="openval(event, 'Call')">Call Script</button>
+  <button class="tablinks" onclick="openval(event, 'Chat')">Chat Script</button>
+  <button class="tablinks" onclick="openval(event, 'Email')">Email Script</button>
+</div>
+
+<div id="Call" class="tabcontent">
+  <h3>Call Script:</h3><br>
+      <h4><b>Call Opening:</b></h4>
+  <p>Welcome to New Avon IT Service Desk, my name is __________, may I know your name please?<br><br>
+
+May I know your contact number please?<br><br>
+
+Are you calling for a new issue or any existing ticket?<br><br>
+
+<b>New issue:</b><br><br>
+
+How may I help you today?<br><br>
+
+<b>Existing ticket:</b><br><br>
+
+May I know the ticket number please?<br><br>
+
+<h4><b>Hold Script(PDR Procedure):</b></h4>
+
+May I place this call on hold for 2 minutes while I look into my resources regarding this?<br><br>
+
+<h4><b>Call Closing: </b></h4>
+
+<p><b>Offering ticket number:</b><br><br>
+
+I have opened an incident regarding this, please note down the incident number for your future reference.<br><br>
+
+<b>Further assistance:</b><br><br>
+
+Is there anything else that I may assist you with?<br><br>
+
+<b>Closing:</b><br><br>
+
+Thank you for calling the New Avon IT Service Desk. Have a nice day.
+</p>
+
+</p>
+</div>
+
+<div id="Chat" class="tabcontent">
+  <h3>Chat script:</h3>
+  <p>
+<b>1. Start a chat</b><br><br>
+"Hello, thank you for contacting New Avon Service Desk. How may I help you today?"<br><br>
+<b>Once ServiceDesk get a response:-</b><br><br>
+"I would certainly help you with it."<br><br>
+"In order to assist you further please help me with the following:"<br><br>  
+"Please help me with ..."<br><br>
+<b>After the customer confirms his wellbeing ServiceDesk can move on with saying:-</b><br><br>
+ "Sorry for the inconvenience, I would be happy to help you"<br><br>
+<b>2. Ask for more information or probing to gain clarity on issue</b><br><br>
+May I please have your phone number?<br><br>
+Could you please confirm your manager's name?<br><br>
+ "If I understand you correctly..."<br><br>
+"Please tell me more about..."<br><br>
+"So you are saying that.. correct?"<br><br>
+<b>3. How to say "I don't know"</b><br><br>
+"I'm not sure, however let me find that out for you, please allow me a minute"<br><br>
+"May I please place the chat on hold for two minutes, I will clarify this with my Floor Supervisor."<br><br>
+<b>4. Put on hold & appreciate user for holding on Chat</b><br><br>
+"Please allow me two minutes while I check my resources" <br><br>
+"I'm sorry to keep you waiting. Here's what needs to be done to fix it."<br><br>
+"Thank you for waiting."<br><br>
+<b>5. Handle complaints and angry customers</b><br><br>
+"I'm sorry this has happened. I understand your frustration, and I will do my best to help you."<br><br>
+<b>6. Wrap up the Chat</b><br><br>
+ "Is there anything else I may help you with today?"<br><br>
+"Please feel free to get in touch with the service desk in case you need further assistance or have any other query. Thank you for contacting New Avon Service Desk. Have a nice day!"<br><br>
+"Thank you for contacting New Avon ServiceDesk. Have a nice day!"<br><br>
+<b>7. Other words</b><br><br>
+Thank you!<br><br>
+Thank you for the confirmation!<br><br>
+Thank you for providing the details<br><br>
+Please allow me a minute, let me check<br><br>
+I appreciate that!<br><br>
+
+</p>
+</div> 
+
+<div id="Email" class="tabcontent">
+  <h3>Email script:</h3>
+  <p>Hello < receiver's name >,<br><br>
+
+This is regarding the ticket number < Ticket number and issue >.<br><br>
+
+
+			< Body of the Email ><br><br>
+
+Thank you,<br>
+New Avon IT Service Desk.</p>
+</div>
+	</div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-info w3-padding-2 w3-text-pink"></i>
+    </div>
+
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-10 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-book w3-padding-10 w3-text-pink w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1><b>Templates</b></h1>
+      <div class="tab">
+  <button class="tablinks" onclick="openval(event, 'Severity')">Severity Template</button>
+  <button class="tablinks" onclick="openval(event, 'Generic')">Generic Template</button>
+  <button class="tablinks" onclick="openval(event, 'Routing')">Routing Template</button>
+</div>
+
+<div id="Severity" class="tabcontent">
+  <h3>Severity Template:</h3>
+  <p>
+	Incident Ticket number :<br><br>
+
+	Incident Severity :<br><br>
+
+	Device that is impacted, Application, Server and/or Database name :<br><br>
+
+	Start Time :<br><br>
+
+	Brief description/Impact (What can't the end user do?) :<br><br>
+
+	Team engaged :<br><br>
+
+	How does it affect Business? :<br><br>
+
+	location :<br><br>
+
+	Number of users affected :<br><br>
+
+	KB :</p>
+</div>
+
+<div id="Generic" class="tabcontent">
+  <h3>Generic Template:</h3>
+  <p>
+	Short Description :  Application Name & Issue<br><br>
+
+	Description :<br><br>
+
+	User Name :<br><br>
+
+	Phone number :<br><br>
+
+	Staff# / User ID :<br><br>
+
+	Issue :<br><br>
+
+	Troubleshooting :<br><br>
+
+	Resolution :<br><br>
+
+	Knowledge base :
+</p> 
+</div>
+
+<div id="Routing" class="tabcontent">
+  <h3>Routing Template:</h3>
+  <p>
+	Short Description :  Application Name & Issue<br><br>
+
+        Description:<br><br>
+
+        User Name :<br><br>
+
+        Manager's Name:<br><br>
+
+        Manager's Approval received ( if applicable) : Yes/No<br><br>
+
+        Phone number :<br><br>
+
+        Alt Phone number: <br><br>
+
+        Staff# / User ID:<br><br>
+
+        Issue:<br><br>
+
+        Troubleshooting :<br><br>
+
+        Resolution: <br><br>
+
+        Knowledge base :</p>
+</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 3rd Grid -->
+<div class="w3-row-padding w3-padding-5 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1><b>Top call drivers</b></h1>
+      <div class="tab">
+  <button class="tablinks" onclick="openval(event, 'AD')">Active Directory</button>
+  <button class="tablinks" onclick="openval(event, 'Citrix')">Citrix</button>
+  <button class="tablinks" onclick="openval(event, 'Concur')">Concur</button>
+  <button class="tablinks" onclick="openval(event, 'E1')">Enterprise1(E1)</button>
+  <button class="tablinks" onclick="openval(event, 'Mainframe')">Mainframe</button>
+  <button class="tablinks" onclick="openval(event, 'Outlook')">Outlook</button>
+  <button class="tablinks" onclick="openval(event, 'UltiPro')">UltiPro</button>
+  <button class="tablinks" onclick="openval(event, 'Vblite')">Vblite</button>
+  <button class="tablinks" onclick="openval(event, 'Vibe')">Vibe</button>
+  <button class="tablinks" onclick="openval(event, 'VMware')">VMware</button>
+  <button class="tablinks" onclick="openval(event, 'WMOS')">WMOS</button>
+  <button class="tablinks" onclick="openval(event, 'YourAvon')">Your Avon</button>
+
+</div>
+
+<div id="AD" class="tabcontent">
+  <h3>KB Article: KB0011253</h3><br>
+  <p><u><b>Successful Login via Windows:</b></u><br><br>
+
+For <b>remote users</b>, resetting the AD password will not allow them to log into Windows. If a remote user is unable to login to Windows (not VPN), <b>DO NOT RESET THE AD ACCOUNT PASSWORD.</b> Have the user try logging in using the most resent password or previous used password. If the current or previous used password do not work, <i><u>login as the administrator complete the "Re-Joining to Domain - Windows Network Account Login Issue" document.</u></i><br><br>
+
+ID:  .\administrator<br><br>
+PW:  PW4avonAdmin!<br><br>	OR,
+PW: PW4avonAdmin<br><br>
+
+After logging in as the Admin, have user connect to VPN and login using the user's most recently used password. If the most recently password do not work, try the most previously used password. If the passwords do not allow the user to successfully login to VPN, remote into the machine and troubleshoot the following:<br><br>
+
+	1. Check if the user is typing the correct ID and password<br><br>
+	2. Check AD account for a lock out (please see below)<br><br>
+	3. Check AD account for an account expire (please see below)<br><br>
+	4. Check for Internet connection-Verify the end-user is successfully connect to the Internet, by going to outside websites. If the user is unable to connect to the Internet, have user cycle-power their Internet connection and reboot. If they continue to have Internet connection issues, have the user contact their ISP for Internet relation connection assistance.<br><br>
+
+After completing the troubleshooting, you can then reset the AD password for a remote user. However verify that you have completed the following:<br><br>
+
+	1. You have remote into the machine<br><br>
+	2. AD account is not locked<br><br>
+	3. AD account has not expired<br><br>
+	4.There is not an Internet connection issue<br><br>
+
+<u><b>Successful Login via VPN:</b></u><br><br>
+
+Note: If a user is unable to login to VPN, <b>DO NOT RESET THE AD ACCOUNT PASSWORD.</b> Have the user try logging in using the most resent password or previous used password. If the current or previous used password do not work, remote into machine and troubleshoot the following:<br><br>
+
+	1. Check if the user is typing the correct ID and password<br><br>
+	2. Check AD account for a lock out <br><br>
+	3. Check AD account for an account expire <br><br>
+	4. Check for Internet connection - Vrify the end-user is successfully connect to the Internet, by going to outside websites. If the user is unable to connect to the Internet, have user cycle-power their Internet connection and reboot. If they continue to have Internet connection issues, have the user contact their ISP for Internet relation connection assistance.<br><br>
+
+After completing the troubleshooting, you can then reset the AD password for a remote user. However verify that you have completed the following:<br><br>
+
+	1. You have remote into the machine<br><br>
+	2. AD account is not locked<br><br>
+	3. AD account has not expired<br><br>
+	4.There is not an Internet connection issue<br><br>
+
+Reset the AD password <b>(ONLY IF USER IS ALREADY LOGGED INTO WINDOWS)</b>. Have the user login to VPN using the new password. Once contacted successfully, lock the computer <b>(DO NOT REBOOT)</b>.<br><br>
+
+<i>*If you reboot the machine, the user will be unable to login to Windows and recover the profile successfully. The profile of the end-user is a cached profile and will be lost if you reset the password and reboot.</i><br><br>
+
+After resetting the password and the user have successfully logged into VPN, verify the user successfully connected to VPN and have the user lock and unlock the computer<b>(NOT REBOOT THE COMPUTER)</b>.<br><br>
+
+Once the computer has been locked, while contacted to VPN, have user login to Windows with the new VPN/AD password.<br><br>
+
+Once logged into Windows successfully and still contacted to VPN, have user login to other applications needed and verify a successful login and connection.<br><br>
+
+
+<b><u>Resetting AD Account Password for Network/In-House Users:</u></b><br><br>
+
+	1. Search for the end-user's name or AD ID<br><br>
+	2. Right-click on the ID and select 'Reset Password'<br><br>
+
+Type in a new temporary password and check the 'User mush change password at next login' and click ok.<br><br>
+
+
+<b><u>How to Unlock AD Account:</u></b><br><br>
+
+Select the 'Unlock Account' box and click 'Ok'. You can also use this step as a troubleshooting step.<br><br>
+
+
+<b><u>AD Account Disabled Process:</u></b><br><br>
+
+If an end-user's AD account is showing 'Disabled',<b> DO NOT ENABLE</b> the account. In order to enable the account we need their manager's approval. Please complete the following:<br><br>
+
+	1. Open an INC ticket<br><br>
+	2. Verify the end-user's manager name, which the manager's name can be found in AD, under the 'Organization' tab.<br><br>
+	3. Email the manager for their approval of re-enabling the AD account.
+	4. Attach the approval to the INC ticket and assign the ticket to the <b>IBM-IN-IAM</b>.<br><br>
+
+
+<b><u>How to Check if AD Account has Expired:</u></b><br><br>
+
+If an end-user's AD account, 'Account Expires' section has 'End of:' date showing a date that will expire soon or has already expired, <b>DO NOT CHANGE.</b>In order to extend the account we need their manager's approval. Please complete the following:<br><br>
+
+	1. Open an INC ticket<br><br>
+	2. Verify the end-user's manager name, which the manager's name can be found in AD, under the 'Organization' tab.<br><br>
+	3. Email the manager for their approval to extend the AD account for another 90-days.<br><br>
+	4. Attach the approval to the INC ticket and assign the ticket to the <b>IBM-IN-IAM</b>.<br><br>
+</p>
+</div>
+
+<div id="Citrix" class="tabcontent">
+  <h3>Assignment Group: IBM-SSO-CITRIX</h3>
+</div>
+
+<div id="Mainframe" class="tabcontent">
+  <h3>KB Article: KB0010728</h3><br>
+  <p>Login URL: <b>http://pokmspblz1.corp.newavon.com/</b><br><br>
+
+<B><U>How to reset password in mainframe:</u></b><br><br>
+
+	1. Login using your TPX/Mainframe user id and password<br>
+	2. Move cursor with arrow keys to <b>TSO</b> hit enter<br>
+	3. Press Enter<br>
+	4. Type 6 and press enter<br><br>
+
+<b><u>Changing the Password:</u></b><br><br>
+
+	1. Type acf if you have the user ID.<br>
+	2. Press enter twice and type l < space > < userID ><br>
+	3. Type quit to back out.<br><br>
+
+<i>Cha * pswd-vio (0)</i> - this will decrease the number of violations and allow user to try existing password again.<br><br>
+
+<i>Cha * password(avon123)</i> - this will change the password to avon123, and allow user to enter avon123, and it will prompt them for a new password.
+</p> 
+</div>
+
+<div id="Vblite" class="tabcontent">
+  <h3>KB Article: KB0012004</h3><br>
+  <p>(For multiple users)<br><br>
+Resolver Group: <b>AVON-US IT - Call Center L2</b><br><br>
+
+(For single user)<br><br>
+<b>Local IT - DSS</b>
+</p>
+</div>
+
+<div id="E1" class="tabcontent">
+<h3>KB Article: KB0010770</h3><br>
+<p>New Groups:  <b>Avon-US IT - ERP L1</b><br><br>
+
+Application SME: <b>Gerald Steinhauser, Alfredo Perez</b><br><br>
+
+Application URL: <b>http://jdeprod.corp.newavon.com/jde/E1Menu.maf</b><br><br>
+
+<b>E1 authenticates through AD.</b><br><br>
+
+For access request, please have user complete the E1 Access Request form and submit a Self Service Access Request. 
+
+</p>
+</div>
+
+<div id="Vibe" class="tabcontent">
+  <h3>KB Article: KB0011292</h3><br>
+  <p>Application SME: <b>AD Authenticated, no access needed to grant access</b><br><br>
+
+Application Account Administration:  N/A<br><br>
+
+How to Access/Login to Application:  <b>https://avonvibe.com/</b>
+</p>
+</div>
+
+<div id="Outlook" class="tabcontent">
+  <h3>KB Article: KB0010295</h3><br>
+  <p>
+Alias Name of the application: <b>OutLook - email / Skype</b><br><br>
+
+How to Access: <b>Local MS Office 2013 Suite or outlook.office365.com</b><br><br>
+
+Resolver Group: <b>IBM-Office-365-Team</b>
+</p>
+</div>
+
+<div id="UltiPro" class="tabcontent">
+  <h3>KB Article: KB0011506</h3><br>
+  <p>UltiPro helpdesk number for password reset: <b>844-317-7501</b></p>
+</div>
+
+<div id="Concur" class="tabcontent">
+  <h3>KB Article: KB0010280</h3><br>
+<p>How to Access/Login to Application: <b>https://www.concursolutions.com/</b><br><br>
+Email support group: <b>NewAvonConcurAdmin@avonusa.com</b>
+</p>
+</div>
+
+<div id="YourAvon" class="tabcontent">
+  <h3>KB Article: KB0010803</h3><br>
+  <p>
+Alias Name of the application: <b>youravon web office-US</b><br><br>
+
+How to Access: <b>Youravon.com</b><br><br>
+
+Resolver Group: <b>Avon-US IT-US eCommerce Support</b><br><br>
+
+Application SME: <b>Sandy DeMartino</b><br><br>
+
+IT Owner: <b>Sandy DeMartino</b>
+</p>
+</div>
+
+<div id="VMware" class="tabcontent">
+  <h3>KB Article: KB0010315</h3><br>
+  <p>
+Alias Name of the application: <b>Vmware</b> <br><br>
+
+How to Access: <b>Virtual Server Infrastructure Supported by Dominic Amato and Myriam Samaan</b><br><br>
+
+Details to gather for tickets: <b>Provide screenshot and who is calling</b><br><br>
+
+Troubleshooting Steps:  <b>Create ticket</b><br><br>
+
+Resolver Group: <b>Avon-CAN-Network Services</b><br><br>
+
+Application SME: <b>Dominic Amato</b> <br><br>
+
+Application Account Administration: <b>No account Administration</b>
+</p> 
+</div>
+
+<div id="WMOS" class="tabcontent">
+  <h3>KB Article: KB0010423</h3><br>
+  <p>Resolver group: <b>Avon-US IT-WMOS Support</b><br><br>
+
+Application URL: <b>http://wmosprod.rye.avon.com/wmweb/</b>
+</p> 
+</div>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-cog w3-padding-5 w3-text-pink "></i>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-100">
+    <h1 class="w3-margin w3-xlarge">IBM</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function openval(evt, valName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(valName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+//expectation(repeating), closing, opening, hold
+
+</script>
+
+</body>
+</html>

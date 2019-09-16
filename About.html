@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "nimbussansnovus",helvetica,arial,sans-serif}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-pink w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-small w3-hover-white w3-large w3-pink" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-small w3-white"style="width:70px;height:35px;">Home</a>
+    <a href="Contacts.html" class="w3-bar-item w3-button w3-padding-small w3-white"style="width:100px;height:35px;">Contacts</a>
+<a href="https://w3.ibm.com/#/">
+  <img src="image\ibm.png" alt="NA" style="width:65px;height:35px;border:0;" class="w3-right w3-bar-item w3-button w3-padding-small">
+</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-small">
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-pink w3-center" style="padding:15px 15px">
+<br><img src="image\AVONLOGO.jpeg" alt="NA" width="350" height="100" class="w3-margin-top"><br>
+ </header>
+
+<div class="w3-row-padding w3-padding-2 w3-container">
+  <div class="w3-content">
+      <h1>About Avon</h1>
+<p><span style="font-family:nimbussansnovus,helvetica,arial,sans-serif; font-size:16px; letter-spacing:0.24992px; line-height:24px"> <i>New Avon Company* ("New Avon") is the leading social selling beauty company in North America, with independent sales Representatives across the United States, Puerto Rico and Canada. Avon's product portfolio includes award-winning skincare, color cosmetics, fragrance and personal care products, featuring iconic brands such as ANEW, Avon Color, mark., and Skin So Soft, as well as fashion and accessories. Avon has a 130 year history of empowering women through economic opportunity, and the company also proudly supports efforts to end breast cancer and domestic violence.<br><br>
+In 1886, 34 years before women in the U.S. earned the right to vote, Avon's founder, David H. McConnell, helped give them the chance to earn an independent income. He didn&rsquo;t set out to create a beauty company. In fact, McConnell was a traveling book salesperson who offered fragrances samples as an additional perk to his female customers. He saw that these women were more interested in the free perfume than the books. Since women had a passion for his products and loved networking with other women, McConnell was inspired to recruit them as Sales Representatives.</i></p>
+
+
+</div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-100">
+    <h1 class="w3-margin w3-xlarge">IBM</h1>
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function openval(evt, valName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(valName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+//expectation(repeating), closing, opening, hold
+
+</script>
+
+</body>
+</html>
